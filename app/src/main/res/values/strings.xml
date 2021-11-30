@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DotC</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="background_image">Background Image</string>
+    <string name="diary_of_the_creator">Diary of the Creator</string>
+    <string name="games">Games</string>
+    <string name="game_title">Game Title</string>
+    <string name="select_image">Select Image</string>
+    <string name="create_game">Create Game</string>
+    <string name="create_entry">Create Entry</string>
+    <string name="category_element_name">Category Element\'s Name</string>
+</resources>

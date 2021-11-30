@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name = "medievalStyle">
+        <item name = "android:layout_width">250sp</item>
+        <item name = "android:layout_height"> wrap_content </item>
+        <item name = "android:fontFamily"> @font/medieval_scroll_of_wisdom </item>
+        <item name = "android:textSize"> 15sp </item>
+        <item name = "android:gravity"> center </item>
+    </style>
+
+    <style name = "entryTitle">
+        <item name = "android:fontFamily">@font/medieval_scroll_of_wisdom</item>
+        <item name = "android:textSize"> 20dp </item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:layout_width"> match_parent</item>
+    </style>
+
+    <style name = "entryBody">
+        <item name = "android:fontFamily">@font/medieval_scroll_of_wisdom</item>
+        <item name = "android:textSize"> 15dp </item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:layout_width"> match_parent</item>
+    </style>
+
+    <style name = "categoryElement">
+        <item name = "android:fontFamily">@font/medieval_scroll_of_wisdom</item>
+        <item name = "android:textSize"> 15dp </item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:layout_width"> match_parent</item>
+        <item name = "android:hint">@string/category_element_name</item>
+        <item name = "android:textColor" >@color/black</item>
+        <item name = "android:textColorHint">@color/black</item>
+    </style>
+
+    <style name = "entryCategoryHeader">
+        <item name = "android:fontFamily">@font/medieval_scroll_of_wisdom</item>
+        <item name = "android:textSize"> 25dp </item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:layout_width"> match_parent</item>
+        <item name = "android:color">@color/black</item>
+        <item name = "android:textAlignment">center</item>
+        <item name = "android:textColorHint">@color/black</item>
+        <item name = "android:textColor">@color/black</item>
+    </style>
+
+    <style name = "entryTextViewStyle">
+        <item name = "android:fontFamily">@font/medieval_scroll_of_wisdom</item>
+        <item name = "android:textSize"> 15dp </item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:layout_width"> match_parent</item>
+        <item name = "android:color">@color/black</item>
+        <item name = "android:textColorHint">@color/black</item>
+        <item name = "android:textAlignment">center</item>
+        <item name = "android:textColor">@color/black</item>
+    </style>
+</resources>

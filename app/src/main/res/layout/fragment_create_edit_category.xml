@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.category.CreateEditCategoryFragment"
+    android:background="@android:color/transparent"
+    android:backgroundTint="@android:color/transparent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/createEditCategoryConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="175dp"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Category Editor"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="390dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="264dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+            <LinearLayout
+                android:id="@+id/categoryEditorLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/black"
+                    android:backgroundTint="@android:color/transparent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/categoryEditorInputName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:fontFamily="@font/medieval_scroll_of_wisdom"
+                        android:hint="Category Name"
+                        android:textColorHint="@color/black"
+                        android:textColor="#000000" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/buttonAddCategoryElement"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Add Element"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/buttonRemoveCategoryElement"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+        <Button
+            android:id="@+id/buttonRemoveCategoryElement"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="75dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Remove Element"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonAddCategoryElement"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+        <Button
+            android:id="@+id/buttonCategoryEditorCreateCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="154dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Create Cateogry"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+        <Button
+            android:id="@+id/categoryEditorReturnButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="81dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="45dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Return"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

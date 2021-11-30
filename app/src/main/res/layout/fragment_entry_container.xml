@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="@android:color/transparent"
+    tools:context=".fragments.entry.EntryContainerFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="140dp"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Entries"
+            android:textColor="#000000"
+            android:textSize="33sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonOpenEntry"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="396dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Open Entry"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/buttonEditEntry"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="280dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Edit Entry"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonOpenEntry" />
+
+        <Button
+            android:id="@+id/buttonDeleteEntry"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="188dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Delete Entry"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonEditEntry" />
+
+        <Button
+            android:id="@+id/buttonCreateEntry"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="@string/create_entry"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDeleteEntry" />
+
+        <Spinner
+            android:id="@+id/entryDropDownList"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonOpenEntry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.046" />
+
+        <Button
+            android:id="@+id/entryContainerReturnButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Return"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCreateEntry" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

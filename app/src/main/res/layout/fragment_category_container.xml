@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="@android:color/transparent"
+    tools:context=".fragments.category.CategoryContainerFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewCategoryContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Categories"
+            android:textColor="#000000"
+            android:textSize="33sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonOpenCategory"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="-80dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Open Category"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/buttonEditCategory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryDropDownList" />
+
+        <Button
+            android:id="@+id/buttonEditCategory"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Edit Category"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/buttonDeleteCategory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonDeleteCategory"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Delete Category"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCreateCategory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonCreateCategory"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="180dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Create Category"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/categoryDropDownList"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginBottom="145dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonOpenCategory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCategoryContainer" />
+
+        <Button
+            android:id="@+id/categoryContainerReturnButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="69dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Return"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCreateCategory" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

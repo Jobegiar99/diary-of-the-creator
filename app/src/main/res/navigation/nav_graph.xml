@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.jobegiar99.dotc.loginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <argument
+            android:name="globalUsername"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_loginFragment_to_gameContainerFragment2"
+            app:destination="@id/gameContainerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameContainerFragment"
+        android:name="com.jobegiar99.dotc.fragments.game.GameContainerFragment"
+        android:label="fragment_game_container"
+        tools:layout="@layout/fragment_game_container">
+        <action
+            android:id="@+id/action_gameContainerFragment_to_categoryContainerFragment"
+            app:destination="@id/categoryContainerFragment" />
+        <argument
+            android:name="globalUsername"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_gameContainerFragment_to_createGameFragment"
+            app:destination="@id/createGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryContainerFragment"
+        android:name="com.jobegiar99.dotc.fragments.category.CategoryContainerFragment"
+        android:label="fragment_category_container"
+        tools:layout="@layout/fragment_category_container">
+        <action
+            android:id="@+id/action_categoryContainerFragment_to_entryContainerFragment"
+            app:destination="@id/entryContainerFragment" />
+        <argument
+            android:name="globalUsername"
+            app:argType="string" />
+        <argument
+            android:name="gameID"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_categoryContainerFragment_to_createEditCategoryFragment"
+            app:destination="@id/createEditCategoryFragment" />
+        <action
+            android:id="@+id/action_categoryContainerFragment_to_gameContainerFragment"
+            app:destination="@id/gameContainerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entryContainerFragment"
+        android:name="com.jobegiar99.dotc.fragments.entry.EntryContainerFragment"
+        android:label="fragment_entry_container"
+        tools:layout="@layout/fragment_entry_container">
+        <action
+            android:id="@+id/action_entryContainerFragment_to_entryViewerFragment"
+            app:destination="@id/entryViewerFragment" />
+        <argument
+            android:name="globalUsername"
+            app:argType="string" />
+        <argument
+            android:name="categoryID"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_entryContainerFragment_to_categoryContainerFragment"
+            app:destination="@id/categoryContainerFragment" />
+        <argument
+            android:name="gameID"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/entryViewerFragment"
+        android:name="com.jobegiar99.dotc.fragments.entry.EntryViewerFragment"
+        android:label="fragment_entry_viewer"
+        tools:layout="@layout/fragment_entry_viewer" >
+        <argument
+            android:name="globalUsername"
+            app:argType="string" />
+        <argument
+            android:name="categoryID"
+            app:argType="integer" />
+        <argument
+            android:name="entryID"
+            app:argType="integer" />
+        <argument
+            android:name="modify"
+            app:argType="boolean" />
+        <argument
+            android:name="create"
+            app:argType="boolean" />
+        <argument
+            android:name="viewEntry"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_entryViewerFragment_to_entryContainerFragment"
+            app:destination="@id/entryContainerFragment" />
+        <argument
+            android:name="entryTitle"
+            app:argType="string" />
+        <argument
+            android:name="gameID"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/createGameFragment"
+        android:name="com.jobegiar99.dotc.fragments.game.CreateGameFragment"
+        android:label="fragment_create_game"
+        tools:layout="@layout/fragment_create_game">
+        <action
+            android:id="@+id/action_createGameFragment_to_gameContainerFragment"
+            app:destination="@id/gameContainerFragment" />
+        <argument
+            android:name="globalUsername"
+            app:argType="string" />
+        <argument
+            android:name="modifyGame"
+            app:argType="boolean" />
+        <argument
+            android:name="gameID"
+            app:argType="integer" />
+        <argument
+            android:name="gameTitle"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/createEditCategoryFragment"
+        android:name="com.jobegiar99.dotc.fragments.category.CreateEditCategoryFragment"
+        android:label="fragment_create_edit_category"
+        tools:layout="@layout/fragment_create_edit_category" >
+        <argument
+            android:name="globalUsername"
+            app:argType="string" />
+        <argument
+            android:name="gameID"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_createEditCategoryFragment_to_categoryContainerFragment"
+            app:destination="@id/categoryContainerFragment" />
+        <argument
+            android:name="modify"
+            app:argType="boolean" />
+        <argument
+            android:name="categoryTitle"
+            app:argType="string" />
+    </fragment>
+</navigation>

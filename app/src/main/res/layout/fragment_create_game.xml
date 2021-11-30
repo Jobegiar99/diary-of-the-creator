@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:backgroundTint="@android:color/transparent"
+    tools:context=".fragments.game.CreateGameFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="81dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColorHint="@color/black"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragmentCreateGame_GameTitle"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ellipsize="start"
+                android:fontFamily="@font/medieval_scroll_of_wisdom"
+                android:gravity="center"
+                android:hint="@string/game_title"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/fragmentCreateGameButton"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="@string/create_game"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+        <Button
+            android:id="@+id/createGameReturnButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="115dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/medieval_scroll_of_wisdom"
+            android:text="Return"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentCreateGameButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
